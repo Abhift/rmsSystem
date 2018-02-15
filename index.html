@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app="RmsApp">
+<head>
+
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rental Management System</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="Content/resposive.css" rel="stylesheet" />
+    <link href="content/bootstrapBundleFile.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--Base Library-->
+    <script src="scripts/jquery-2.2.3.min.js"></script><!--latest-->
+    <script src="scripts/jquery-ui.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-ui-router.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/ngStorage.min.js"></script>
+    <script src="js/module.js?v=1.0"></script>
+    <script src="js/config.js?v=1.0"></script>
+
+    <script src="js/controller/rmssystemCtrl.js"></script>
+    <div  style="width:100%; position: absolute; height: 100%; background-repeat:repeat-y; top: 0px;">
+        <div ui-view></div>
+    </div>
+    
+
+    <div id="LoaderBody" class="loading-container">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+    <style>
+        .res_log {
+            max-width: 800px;
+            padding: 0;
+            background-color: rgba(247,251,255,0.93);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+        }
+    </style>
+</body>
+</html>
